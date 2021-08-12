@@ -1,25 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { ThemeProvider } from "styled-components";
+import Header from "./components/header/Header";
+import { Theme } from "./components/theme";
+import { HeaderProvider } from "./Providers/headerProvider";
+import { AccountProvider } from "./Providers/AccountProvider";
+import Footer from "./components/Footer/footer";
+import { Route, Switch, BrowserRouter } from "react-router-dom";
+import Main from "./components/Main/Main";
+import DetailsPage from "./components/detailsPage/details";
+import { BookNowProvider } from "./Providers/BookNowProvider";
+import { ReviewProvider } from "./Providers/ReviewsProvider";
+import BookNow from "./components/BookNow/BookNow";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <ThemeProvider theme={Theme}>
+                <HeaderProvider>
+                    <BookNowProvider>
+                        <AccountProvider>
+                            <ReviewProvider>
+                                <div className="App">
+                                    <Header />
+                                    <BookNow />
+                                    <div style={{ flex: 2 }}>
+                                        <Switch>
+                                            <Route
+                                                exact
+                                                path="/"
+                                                component={() => <Main />}
+                                            />
+                                            <Route
+                                                exact
+                                                path="/details/:name"
+                                                component={() => (
+                                                    <DetailsPage />
+                                                )}
+                                            />
+                                        </Switch>
+                                    </div>
+                                    <Footer />
+                                </div>
+                            </ReviewProvider>
+                        </AccountProvider>
+                    </BookNowProvider>
+                </HeaderProvider>
+            </ThemeProvider>
+        </BrowserRouter>
+    );
 }
 
 export default App;

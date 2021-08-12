@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="24" width="24">
+  <g>
+    <g opacity="1">
+      <g transform="translate(12, 12) rotate(-180.00006436155007) translate(-12, -12)" opacity="0">
+        <rect fill="rgb(0,0,0)" fill-opacity="1" opacity="1" x="0" y="0" width="24" height="24" rx="0" ry="0"/>
+      </g>
+      <g opacity="1">
+        <g transform="translate(12.009308525627942, 12.072609327090333) scale(-1, 1) translate(-12.009308525627942, -12.072609327090333)" opacity="1">
+          <path fill-opacity="0" stroke="rgb(255,255,255)" stroke-opacity="1" stroke-width="1.5" opacity="1" fill-rule="evenodd" d="M5.773200380233902 18.370469226288037L18.245416671021978 5.77474942789263"/>
+        </g>
+        <g opacity="1">
+          <path fill-opacity="0" stroke="rgb(255,255,255)" stroke-opacity="1" stroke-width="1.5" opacity="1" fill-rule="evenodd" d="M5.773200380233675 18.370469226288037L18.24541667102175 5.77474942789263"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
