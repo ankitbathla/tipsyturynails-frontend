@@ -5,7 +5,7 @@ import { Theme } from "./components/theme";
 import { HeaderProvider } from "./Providers/headerProvider";
 import { AccountProvider } from "./Providers/AccountProvider";
 import Footer from "./components/Footer/footer";
-import { Route, Switch, BrowserRouter } from "react-router-dom";
+import { Route, Switch, HashRouter } from "react-router-dom";
 import Main from "./components/Main/Main";
 import DetailsPage from "./components/detailsPage/details";
 import { BookNowProvider } from "./Providers/BookNowProvider";
@@ -14,7 +14,7 @@ import BookNow from "./components/BookNow/BookNow";
 
 function App() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <ThemeProvider theme={Theme}>
                 <HeaderProvider>
                     <BookNowProvider>
@@ -46,7 +46,7 @@ function App() {
                     </BookNowProvider>
                 </HeaderProvider>
             </ThemeProvider>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
