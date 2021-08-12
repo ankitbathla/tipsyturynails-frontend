@@ -216,7 +216,7 @@ const BookNow = () => {
                     <CrossContainer>
                         <CrossIcon />
                     </CrossContainer>
-                    <SuccessMsg>SuccessFull Booked Appointment!!!</SuccessMsg>
+                    <SuccessMsg>Appointment booked!!!</SuccessMsg>
                 </SuccessHandler>
             )}
         </>
