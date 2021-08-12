@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Cross from "../icons/cross";
 
 export const LoginContainer = styled.div`
-    position: fixed;
+    position: absolute;
     top: 20rem;
     left: 50%;
     transform: translate(-50%, -50%);

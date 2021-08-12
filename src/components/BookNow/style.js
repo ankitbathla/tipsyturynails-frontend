@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Cross from "../icons/cross";
 
 export const BookNowContainer = styled.div`
-    position: fixed;
+    position: absolute;
     top: 20rem;
     left: 50%;
     z-index: 3000;
