@@ -3,7 +3,7 @@ import Cross from "../icons/cross";
 
 export const BookNowContainer = styled.div`
     position: absolute;
-    top: 20rem;
+    top: 50%;
     left: 50%;
     z-index: 3000;
     width: max-content;

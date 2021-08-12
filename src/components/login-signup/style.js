@@ -3,7 +3,7 @@ import Cross from "../icons/cross";
 
 export const LoginContainer = styled.div`
     position: absolute;
-    top: 20rem;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3000;
